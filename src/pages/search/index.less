@@ -1,0 +1,109 @@
+.box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.search {
+    padding: 20rpx 16rpx;
+    background-color: #eee;
+    position: relative;
+
+    input {
+        background-color: #fff;
+        height: 60rpx;
+        border-radius: 4rpx;
+        padding-left: 70rpx;
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 60rpx;
+
+        img {
+            width: 32rpx;
+            height: 32rpx;
+            margin-right: 16rpx;
+        }
+    }
+}
+
+.nav {
+    height: 100rpx;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+
+    div {
+        width: 33.33%;
+        line-height: 100rpx;
+        text-align: center;
+    }
+
+    .active {
+        color: #eb4450;
+    }
+}
+
+.itemList {
+    padding-top: 200rpx;
+    .item {
+        display: flex;
+        height: 260rpx;
+        padding: 0rpx 20rpx;
+        border-bottom: 1px solid #ddd;
+        .left {
+            padding-top: 30rpx;
+            image {
+                width: 200rpx;
+                height: 200rpx;
+            }
+        }
+
+        .right {
+            flex: 1;
+            padding: 30rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .info {
+                font-size: 16px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+
+            }
+
+            .price {
+                color: #eb4450;
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .footer{
+        font-size: 14px;
+        text-align: center;
+        height: 40rpx;
+        line-height: 40rpx;
+        color: #ddd;
+        &::before{
+            display: inline-block;
+            content: '';
+            width:30%;
+            height: 2rpx;
+            background-color: #ddd;
+        }
+        &::after{
+            display: inline-block;
+            content: '';
+            width:30%;
+            height: 2rpx;
+            background-color: #ddd;
+        }
+    }
+}

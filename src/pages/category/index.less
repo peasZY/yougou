@@ -1,0 +1,96 @@
+page {
+    padding-top: 100rpx;
+}
+
+.mytop {
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    top: 100rpx;
+    bottom: 0rpx;
+    left: 0;
+    .nav {
+        width: 200rpx;
+        background-color: #f4f4f4;
+        overflow: auto;
+        ul {
+            
+            li {
+                width: 100%;
+                height: 100rpx;
+                text-align: center;
+                line-height: 100rpx;
+                font-size: 26rpx;
+            }
+            .active{
+                background-color: #fff;
+                color: #eb4450;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 20rpx;
+                    left: 0;
+                    width: 8rpx;
+                    height: 60rpx;
+                    background-color: #eb4450;
+                }
+            }
+        }
+    }
+
+    .goods {
+        flex: 1;
+        padding: 20rpx 16rpx;
+        overflow: auto;
+        .img {
+            image {
+                width: 100%;
+                height: 180rpx;
+            }
+        }
+
+        .cateList {
+            .title {
+                text-align: center;
+                height: 100rpx;
+                line-height: 100rpx;
+
+                span {
+                    color: #ededed;
+                    margin: 0 20rpx;
+                }
+            }
+
+            .itemList {
+                display: flex;
+                flex-wrap: wrap;
+
+                .item {
+                    width: 33.33%;
+                    text-align: center;
+                    margin-top: 20rpx;
+
+                    image {
+                        width: 80%;
+                        height: 80rpx;
+                    }
+
+                    .name {
+                        font-size: 26rpx;
+                        line-height: 80rpx;
+                        height: 80rpx;
+                    }
+                }
+            }
+        }
+
+    }
+}

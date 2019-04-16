@@ -1,0 +1,79 @@
+page {
+  padding-top: 100rpx;
+}
+.mytop {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.content {
+  display: flex;
+  position: absolute;
+  top: 100rpx;
+  bottom: 0rpx;
+  left: 0;
+}
+.content .nav {
+  width: 200rpx;
+  background-color: #f4f4f4;
+  overflow: auto;
+}
+.content .nav ul li {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 26rpx;
+}
+.content .nav ul .active {
+  background-color: #fff;
+  color: #eb4450;
+  position: relative;
+}
+.content .nav ul .active::before {
+  content: '';
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+  width: 8rpx;
+  height: 60rpx;
+  background-color: #eb4450;
+}
+.content .goods {
+  flex: 1;
+  padding: 20rpx 16rpx;
+  overflow: auto;
+}
+.content .goods .img image {
+  width: 100%;
+  height: 180rpx;
+}
+.content .goods .cateList .title {
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.content .goods .cateList .title span {
+  color: #ededed;
+  margin: 0 20rpx;
+}
+.content .goods .cateList .itemList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .goods .cateList .itemList .item {
+  width: 33.33%;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.content .goods .cateList .itemList .item image {
+  width: 80%;
+  height: 80rpx;
+}
+.content .goods .cateList .itemList .item .name {
+  font-size: 26rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+}
