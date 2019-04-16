@@ -1,0 +1,116 @@
+page{
+    background-color: #f4f4f4;
+}
+.lunbo {
+    height: 720rpx;
+    image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.goods_detail {
+    padding: 0 15rpx;
+    background-color: #fff;
+    .price {
+        height: 122rpx;
+        line-height: 122rpx;
+        color: red;
+        font-size: 20px;
+    }
+
+    .info {
+        display: flex;
+
+        .text {
+            width: 590rpx;
+            box-sizing: border-box;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            border-right: 1px solid #ccc;
+            padding-right: 78rpx;
+
+        }
+
+        .collect {
+            position: relative;
+            padding-top: 6rpx;
+            padding-top: 6rpx;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 14px;
+            color: #999999;
+            .btn_share{
+                position: absolute;
+                width: 80rpx;
+                height: 50rpx;
+                left: 30rpx;
+                top: 30rpx;
+                opacity: 0;
+            }
+        }
+    }
+    .kuaidi{
+        height: 100rpx;
+        line-height: 100rpx;
+        font-size: 14px;
+        color: #999999;
+    }
+}
+.introduce{
+    margin-top: 20rpx;
+    background-color: #fff;
+    .title{
+        line-height: 80rpx;
+        height: 80rpx;
+        padding-left: 15rpx;
+    }
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    background-color: pink;
+    text-align: center;
+    display: flex;
+    .kefu,.cart{
+        width: 20%;
+        display: flex;
+        line-height: 40rpx;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 14px;
+        color: #999999;
+        background-color: #fff;
+    }
+    .kefu{
+        position: relative;
+        .btn_kefu{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+    
+    .add,.buy{
+        width: 30%;
+        font-size: 16px;
+        color: #fff;
+    }
+    .add{
+        background-color: #f4b73f;
+    }
+    .buy{
+        background-color: #eb4450;
+    }
+}

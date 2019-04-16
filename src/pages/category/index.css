@@ -44,6 +44,7 @@ page {
 .content .goods {
   flex: 1;
   padding: 20rpx 16rpx;
+  box-sizing: border-box;
   overflow: auto;
 }
 .content .goods .img image {

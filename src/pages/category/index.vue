@@ -20,7 +20,7 @@
               <span>/</span>
             </div>
             <div class="itemList">
-            <a :href="'/pages/search/main?query='+subitem.cat_name" class="item" v-for="(subitem,subindex) in item.children" :key="subindex">
+            <a :href="'/pages/searchlist/main?query='+subitem.cat_name" class="item" v-for="(subitem,subindex) in item.children" :key="subindex">
               <image :src="'https://itjustfun.cn/'+subitem.cat_icon" mode="aspectFill"></image>
               <p class="name">{{subitem.cat_name}}</p>
             </a>
@@ -49,6 +49,13 @@ export default {
     }
   },
   async created() {
+    console.log('分类页面');
+    // let res = await request('https://itjustfun.cn/api/public/v1/categories');
+    // console.log(res);
+    // this.menuList = res.data.data;
+    // this.rightList = res.data.data[0].children;
+  },
+  async mounted() {
     let res = await request('https://itjustfun.cn/api/public/v1/categories');
     console.log(res);
     this.menuList = res.data.data;

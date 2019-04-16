@@ -1,9 +1,8 @@
 .box {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  z-index: 1;
 }
 .search {
   padding: 20rpx 16rpx;
@@ -27,6 +26,8 @@
   margin-right: 16rpx;
 }
 .nav {
+  position: relative;
+  background-color: #fff;
   height: 100rpx;
   border-bottom: 1px solid #ddd;
   display: flex;
@@ -38,9 +39,6 @@
 }
 .nav .active {
   color: #eb4450;
-}
-.itemList {
-  padding-top: 200rpx;
 }
 .itemList .item {
   display: flex;

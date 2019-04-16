@@ -1,7 +1,3 @@
 {
-    "navigationBarTitleText": "搜索列表",
-    "onReachBottomDistance": 50,
-    "enablePullDownRefresh": true,
-    "backgroundTextStyle": "dark",
-    "backgroundColor": "#f00"
+    "navigationBarTitleText":"搜索"
 }
