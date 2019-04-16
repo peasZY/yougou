@@ -1,0 +1,51 @@
+.topSearch {
+  height: 120rpx;
+  box-sizing: border-box;
+  padding: 30rpx 16rpx;
+  background-color: #eeeeee;
+  display: flex;
+  font-size: 30rpx;
+}
+.topSearch .search_input {
+  flex: 1;
+  position: relative;
+}
+.topSearch .search_input input {
+  background-color: #fff;
+  height: 60rpx;
+  padding-left: 56rpx;
+}
+.topSearch .search_input icon {
+  position: absolute;
+  left: 15rpx;
+  top: 15rpx;
+}
+.topSearch .btncancel {
+  margin-left: 30rpx;
+  width: 158rpx;
+  height: 58rpx;
+  border: 1px solid #999;
+  border-radius: 8rpx;
+  text-align: center;
+  line-height: 58rpx;
+}
+.history {
+  padding: 0 16rpx;
+}
+.history .title {
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.history .content .item {
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+  padding: 20rpx 25rpx;
+  background-color: #ddd;
+  border-radius: 8rpx;
+}
